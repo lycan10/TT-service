@@ -1,0 +1,318 @@
+.gallery{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.gallery-container{
+    padding: 3rem 6rem;
+
+    text-align: center;
+    color: #333;
+
+   
+}
+.modal-footer{
+    border: 0;
+}
+.gallery-title {
+    margin-bottom: 1rem;
+  }
+.gallery-title h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .gallery-title p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .main-modal{
+    overflow-y: hidden;
+}
+.gallerycards-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Makes each card fit the container */
+  gap: 1rem; /* Adds spacing between the cards */
+  justify-items: center; /* Centers the cards in each grid cell */
+  padding: 1rem;
+  
+    
+}
+.modal-header{
+padding-bottom: 1rem;
+}
+.modal-gallery-title{
+    padding-bottom: 0rem ;
+}
+.modal-gallery-title h2{
+    font-family: var(--font-family);
+    margin: 0;
+    font-size: 21px;
+    font-weight: 600;
+}
+.modal-gallery-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1rem;
+    margin: 0 auto;
+    justify-content: center;
+    overflow: scroll !important;
+  height: 700px;
+  padding: 1rem 0 2rem;
+}
+.card-flip{
+    width: 300px;
+    height: 300px;
+}
+
+.modal-img{
+    width: 320px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-img h3{
+    font-family: var(--font-family);
+    margin: 0.6rem 0 0;
+    font-size: 14px;
+    max-width: 100%;
+    font-weight: 700;
+    color: var(--color);
+    text-align: center;
+}
+
+.modal-img-front{
+
+}
+
+@media screen and (max-width: 1440px) {
+    .gallery-title h1 {
+        font-size: 2.3rem;
+        color: #333;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
+    .gallerycards-container{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        gap: 1rem; /* Adds spacing between the cards */
+        justify-items: center; /* Centers the cards in each grid cell */
+        padding: 2rem 1rem;
+          
+      } 
+}
+
+@media screen and (max-width: 1200px) {
+    .gallery-title {
+        margin-bottom: 0.5rem;
+      }
+    .gallery-container{
+        padding: 2rem 3rem;
+    
+        text-align: center;
+        color: #333;
+    
+       
+    }
+    .gallerycards-container{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        gap: 1rem; /* Adds spacing between the cards */
+        justify-items: center; /* Centers the cards in each grid cell */
+        padding: 2rem 1rem;
+          
+      } 
+      .modal-gallery-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 1rem;
+        margin: 0 auto;
+        justify-content: center;
+        overflow: scroll !important;
+      height: 500px;
+      padding: 1rem 0 2rem;
+    }
+    .card-flip{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .modal-img{
+        width: 280px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .modal-img img{
+        width: 250px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .modal-img h3{
+        font-family: var(--font-family);
+        margin: 0.6rem 0 0;
+        font-size: 14px;
+        max-width: 100%;
+        font-weight: 700;
+        color: var(--color);
+        text-align: center;
+    }
+}
+@media screen and (max-width: 800px) {
+    .gallery-title {
+        margin-left: 0.8rem;
+        margin-bottom: 0rem;
+      }
+    .gallery-container{
+        padding: 2rem 1rem;
+    
+        text-align: start;
+        color: #333;
+    
+    }
+    .gallerycards-container{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr ; 
+        gap: 1rem; /* Adds spacing between the cards */
+        justify-items: center; /* Centers the cards in each grid cell */
+        padding: 2rem 0rem;
+          
+      } 
+  
+   
+      
+      .gallery-title p {
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .main-modal{
+
+      }
+      .modal-gallery-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        row-gap: 1rem;
+        margin: 0 auto;
+        justify-content: center;
+        overflow: scroll !important;
+      height: 400px;
+      padding: 1rem 0 2rem;
+    }
+    .card-flip{
+   
+    }
+    
+    .modal-img{
+        padding: 1rem 1rem 0;
+        width: 200px;
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .modal-img img{
+        width: 100%;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .modal-img h3{
+        font-family: var(--font-family);
+        margin: 0rem 0 0.5rem;
+        font-size: 14px;
+        max-width: 100%;
+        font-weight: 700;
+        color: var(--color);
+        text-align: center;
+    }
+}
+@media screen and (max-width: 500px) {
+    .gallery-container{
+        padding: 2rem 1rem;
+        color: #333;
+    }
+    .gallerycards-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr ; 
+        gap: 1rem; /* Adds spacing between the cards */
+        justify-items: center; /* Centers the cards in each grid cell */
+        padding: 1rem 0rem;
+          
+      } 
+      .gallery-title  {
+        margin-left: 0;
+      }
+      .gallery-title h1 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
+      .gallery-title p {
+        font-size: 0.8rem;
+        color: #666;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .modal-gallery-container{
+        display: grid;
+        grid-template-columns: 1fr ;
+        row-gap: 1rem;
+        margin: 0 auto;
+        justify-content: center;
+        overflow: scroll !important;
+      height: 450px;
+      padding: 1rem 0 2rem;
+    }
+    .card-flip{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .modal-img{
+        padding: 1rem 1rem 0;
+        width: 350px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .modal-img img{
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .modal-img h3{
+        font-family: var(--font-family);
+        margin: 0rem 0 0.5rem;
+        font-size: 14px;
+        max-width: 100%;
+        font-weight: 700;
+        color: var(--color);
+        text-align: center;
+    }
+    .modal-gallery-title h2{
+        font-family: var(--font-family);
+        margin: 0;
+        font-size: 19px;
+        font-weight: 600;
+    }
+}
